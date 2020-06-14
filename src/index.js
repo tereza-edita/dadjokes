@@ -1,17 +1,8 @@
-'use strict'
+import Vue from 'vue'
+import App from './App.vue'
+import './index.html'
 
 new Vue({
   el: '#app',
-  data: {
-    upLikes: 0,
-    downLikes: 0
-  },
-  methods: {
-    addLike () {
-      this.upLikes += 1
-    },
-    removeLike () {
-      this.downLikes += 1
-    }
-  }
+  render: h => h(App)
 })
